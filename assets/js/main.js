@@ -9,6 +9,8 @@ const mainImage = document.getElementById("mainImage");
 let indiceCorrente = 0;
 const intervalloTempo = 3000;
 
+const startHtml = document.getElementById("start")
+const stopHtml = document.getElementById("stop")
 
 const arrayImg = [
     './assets/img/NIke Mercurial Superfly 9-PhotoRoom.png-PhotoRoom.png',
@@ -49,12 +51,24 @@ function visualizzaImmagine(indice) {
             </div>
         </div>`;
 }
-function cambiaImmagineSuccessiva() {
-    indiceCorrente = (indiceCorrente + 1) % arrayDettagliScarpa.length;
-    visualizzaImmagine(indiceCorrente);
-}
+let intervalloSlideshow;
 
-const intervalloSlideshow = setInterval(cambiaImmagineSuccessiva, intervalloTempo);
+startHtml.addEventListener('click',function(){
+    function cambiaImmagineSuccessiva() {
+        indiceCorrente = (indiceCorrente + 1) % arrayDettagliScarpa.length;
+        visualizzaImmagine(indiceCorrente);
+    }
+  
+     intervalloSlideshow = setInterval(cambiaImmagineSuccessiva, intervalloTempo);
+})
+
+stopHtml.addEventListener('click', function(){
+  
+
+  clearInterval(intervalloSlideshow);
+ })
+
+
 
 frecciaSinistraHtml.addEventListener('click', function (event) {
     indiceCorrente = (indiceCorrente - 1 + arrayDettagliScarpa.length) % arrayDettagliScarpa.length;
