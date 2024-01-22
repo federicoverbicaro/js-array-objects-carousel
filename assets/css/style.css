@@ -1,0 +1,7 @@
+img{
+    width: 100%;
+}
+figure,
+#mainImage{
+    background-color: lightgrey;
+}
