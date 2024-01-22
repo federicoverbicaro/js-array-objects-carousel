@@ -33,51 +33,53 @@ Milestone 2:
 Aggiungere il **ciclo infinito** del carosello. Ovvero se la miniatura attiva è la prima e l'utente clicca la freccia verso destra, la miniatura che deve attivarsi sarà l'ultima e viceversa per l'ultima miniatura se l'utente clicca la freccia verso sinistra. -->
 
 
-    <main class="d-flex justify-content-center align-items-center">
+    <main class="d-flex justify-content-center align-items-center vh-100 ">
 
         <div class="container-fluid d-flex justify-content-center p-0">
 
-            <div class="d-flex justify-content-center ">
+            <div class="d-flex justify-content-center position-relative me-3 ">
 
-
-                <div id="figureImg" class="d-flex flex-column mt-2 ">
+                <div id="figureImg" class="d-flex flex-column mt-2 align-items-center  ">
                 </div>
 
-                <div id="mainImage" class="border d-flex p-0 align-items-center rounded-3 position-relative  ">
-                  
-                    <div class="col-10 p-0 d-flex m-0 w-100 flex-column">
+                <div id="mainImage" class="border d-flex p-0 align-items-center rounded-3 w-75 ">
+
+                    <div class="p-0 d-flex m-0 w-100 flex-column  ">
 
                         <div class="d-flex p-3">
-                          <h1 id="nomeScarpa" class="text-capitalize text-white">Nike Mercurial Superfly 9</h1>
+                            <h1 id="nomeScarpa" class="text-capitalize text-white">Nike Mercurial Superfly 9</h1>
                         </div>
 
-                        <figure class="align-self-center d-flex">
-                          <img id="immagineScarpa" src="./assets/img/NIke Mercurial Superfly 9-PhotoRoom.png-PhotoRoom.png" class="d-block" alt="immagine scarpa da calcio">
+                        <figure class="align-self-center d-flex ">
+                            <img id="immagineScarpa"
+                                src="./assets/img/NIke Mercurial Superfly 9-PhotoRoom.png-PhotoRoom.png" class="d-block"
+                                alt="immagine scarpa da calcio">
                         </figure>
 
                         <div class="p-3 w-75">
-                          <p id="descrizioneScarpa" class="text-white text-capitalize">Fai la differenza in campo con il design inconfondibile di Superfly 9 Elite FG. Abbiamo aggiunto un unità Zoom Air, pensata specificamente per il calcio, e una texture aderente sulla parte superiore per un tocco eccezionale, così potrai dare il massimo nei minuti finali della partita, quando conta di più.</p>
+                            <p id="descrizioneScarpa" class="text-white text-capitalize">Fai la differenza in campo con
+                                il design inconfondibile di Superfly 9 Elite FG. Abbiamo aggiunto un unità Zoom Air,
+                                pensata specificamente per il calcio, e una texture aderente sulla parte superiore per
+                                un tocco eccezionale, così potrai dare il massimo nei minuti finali della partita,
+                                quando conta di più.</p>
                         </div>
-                      </div>
+                    </div>
 
                 </div>
+
                 <div class="border-black position-absolute bottom-0 end-0 d-flex gap-3 me-3 mb-3   ">
 
                     <div id="frecciaSinistra" class="">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                            class="bi bi-arrow-left-circle-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0a8 8 0 1 0 0 16A8 8 0 0 0 8 0m3.5 7.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-left-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0m-4.5-.5a.5.5 0 0 1 0 1H5.707l2.147 2.146a.5.5 0 0 1-.708.708l-3-3a.5.5 0 0 1 0-.708l3-3a.5.5 0 1 1 .708.708L5.707 7.5z"/>
+                          </svg>
                     </div>
 
                     <div id="frecciaDestra" class="">
 
-                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor"
-                            class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
-                            <path
-                                d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z" />
-                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" fill="currentColor" class="bi bi-arrow-right-circle" viewBox="0 0 16 16">
+                            <path fill-rule="evenodd" d="M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8m15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0M4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5z"/>
+                          </svg>
                     </div>
                 </div>
             </div>
